@@ -1,0 +1,936 @@
+@font-face {
+    font-family: Averta;
+    src: url('./fonts/AvertaDemoPE-Regular.woff2') format('woff2'), url('./fonts/AvertaDemoPE-Regular.woff') format('woff');
+}
+
+.body {
+    max-width: 1149px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.sidebar__nav {
+    background: #3D41D7;
+    width: 294px;
+    height: 884px;
+    border-radius: 20px;
+    margin-top: -15px;
+    margin-left: 30px;
+    box-shadow: 0px 14px 34px rgba(34, 37, 169, 0.4);
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 101px;
+}
+
+.nav__wrap {
+    width: 250px;
+    height: 769px;
+    margin-top: 30px;
+}
+
+
+.nav--active {
+    position: absolute;
+    width: 3px;
+    height: 32px;
+    left: 0px;
+    
+
+    background: #D3D3FD;
+    border-radius: 0px 100px 100px 0px;
+
+    margin-left: 30px;
+    margin-top: 105px;
+}
+
+.nav__overview--logo {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 24px;
+}
+
+.nav__overview--text {
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: 64px;
+    transition: color .2s;
+}
+
+.nav__overview--text:hover {
+    color: #979797;
+}
+
+.nav__leaderbord--logo {
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 181px;
+}
+
+.nav__leaderbord--text {
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 184px;
+    margin-left: 64px;
+    position: absolute;
+    transition: color .2s;
+}
+
+.nav__leaderbord--text:hover {
+    color: #979797;
+}
+
+.nav__spreadsheets--logo {
+    position: absolute;
+    margin-top: 238px;
+    margin-left: 24px;
+}
+
+.nav__spreadsheets--text {
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: 700;
+    font-size: 14px; 
+    position: absolute;
+    margin-top: 241px;
+    margin-left: 64px;
+    transition: color .2s;
+}
+
+.nav__spreadsheets--text:hover {
+    color: #979797;
+}
+
+.nav__administration--logo {
+    position: absolute;
+    margin-top: 289px;
+    margin-left: 24px;
+}
+
+.nav__administration--text {
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: 700;
+    font-size: 14px; 
+    position: absolute;
+    margin-top: 292px;
+    margin-left: 64px;
+    transition: color .2s;
+}
+
+.nav__administration--text:hover {
+    color: #979797;
+}
+
+.nav__sales--logo {
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 347px;
+}
+
+.nav__sales--text {
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: 700;
+    font-size: 14px; 
+    position: absolute;
+    margin-left: 64px;
+    margin-top: 350px;
+    transition: color .2s;
+}
+
+.nav__sales--text:hover {
+    color: #979797;
+}
+
+.nav__schedule--logo {
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 404px;
+}
+
+.nav__schedule--text {
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: 700;
+    font-size: 14px; 
+    position: absolute;
+    margin-left: 64px;
+    margin-top: 405px;
+    transition: color .2s;
+}
+
+.nav__schedule--text:hover {
+    color: #979797;
+}
+
+.teams__text {
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: bold;
+    font-size: 12px;
+
+    position: absolute;
+    margin-top: 519px;
+    margin-left: 24px;
+}
+
+.teams__message--logo {
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 581px;
+}
+
+.teams__message--text {
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    margin-top: 584px;
+    margin-left: 64px;
+    transition: color .2s;
+}
+
+.teams__message--text:hover {
+    color: #979797;
+}
+
+.teams__message--count {
+    position: absolute;
+    margin-left: 245px;
+    margin-top: 585px;
+}
+
+.message--count--current--num {
+    font-family: 'DM Sans', sans-serif;
+    color: #D3D3FD;
+    font-weight: bold;
+    font-size: 8px;
+    position: absolute;
+    
+    margin-left: 5.5px;
+    margin-top: -16px;
+
+}
+
+.teams__support--logo {
+    position: absolute;
+    margin-left: 24px;
+    margin-top: 635px;
+}
+
+.teams__support--text {
+    font-family: "DM Sans", sans-serif;
+    color: #D3D3FD;
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 64px;
+    margin-top: 637px;
+    transition: color .2s;
+}
+
+.teams__support--text:hover {
+    color: #979797;
+}
+
+.mask__group { 
+    margin-left: -35px;
+}
+
+.upgrade__logo {
+    position: absolute;
+    margin-left: 123px;
+    top: 700px;
+}
+
+.upgrade__text {
+    font-family: "DM Sans", sans-serif;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 75px;
+    top: 770px;
+    position: absolute;
+}
+
+.upgrade__button {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 53px;
+    
+    border: 0;
+    cursor: pointer;
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color:  #323484;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    
+    transition: background, color .1s linear;
+    background-color: white;
+
+    position: absolute;
+    margin-left: 70px;
+    top: 823px;
+    border-radius: 16px;
+}
+
+.btn:hover {
+    background-color: #F6FAFF;
+    color: #979797;
+}
+
+.welcome__back {
+    font-family: Averta;
+    font-size: 15px;
+    color: #8F92A1;
+    font-weight: normal;
+    position: absolute;
+    top: 50px;
+    margin-left: 398px;
+}
+
+.updated__dashboard {
+    font-family: Averta;
+    font-size: 35px;
+    font-weight: 600;
+    color: #272835;
+
+    position: absolute;
+    top: 73px;
+    margin-left: 398px;
+}
+
+.user__menu__notifications {
+    position: absolute;
+    top: 78px;
+    margin-left: 1220px;
+}
+
+.user__menu__settings {
+    position: absolute;
+    top: 75px;
+    margin-left: 1270px;
+}
+
+.user__menu__notifications--count {
+    position: absolute;
+    top: 73px;
+    margin-left: 1225px;
+}
+
+.user__menu__notifications--count--num {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 15.75%;
+    bottom: 18.75%;
+    
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    
+    /* White/W100 */
+    
+    color: #FFFFFF;
+}
+
+.user__menu__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 14px 34px rgba(34, 37, 169, 0.4));
+
+    position: absolute;
+
+    top: 68px;
+    margin-left: 1348px;
+
+}
+
+.last__updates__box {
+    background-color: #FFF4F2;
+    width: 299px;
+    height: 331px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 140px;
+    margin-left: 386px;
+}
+
+.last__updates__box--img {
+    margin: 20px 20px;
+}
+
+.last__updates__title {
+    font-family: Averta;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 58px;
+    margin-left: 22px;
+}
+
+.latest__updates__desc {
+    font-family: Averta;
+    font-weight: normal;
+    font-size: 12px;
+    color: #8F92A1;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 22px;
+}
+
+.latest__updates__button {
+    position: absolute;
+    top: 230px;
+    left: 184px;
+}
+
+.visitors__this__year {
+    width: 299px;
+    height: 164px;
+    background-color: #F6F8FF;
+    margin-left: 30px;
+    margin-right: 25px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 140px;
+    margin-left: 736px;
+}
+
+
+.graph__desc__title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #272835;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 20px;
+
+}
+
+.graph__desc__description {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    color: #8F92A1;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 20px;
+}
+
+.graph__desc__index {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #00875A;
+
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 215px;
+}
+
+.graph__desc__index__description {
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    color: #8F92A1;
+    position: absolute;
+    
+    margin-top: -23px;
+    margin-left: 217px;
+}
+
+.graphic {
+    margin-left: -15px;
+}
+
+.videos__played {
+    width: 136px;
+    height: 134px;
+    background-color: #F6F8FF;
+    border-radius: 20px;
+    position: absolute;
+    top: 337px;
+    margin-left: 736px;
+
+}
+
+.videos__played__button {
+    margin-top: 5px;
+    margin-left: 14px;
+}
+
+.videos__played__title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    margin-top: -45px;
+    color: #272835;
+
+}
+
+.videos__played__desc {
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+
+    text-align: center;
+    color: #8F92A1;
+    transition: color .2s;
+}
+
+
+.scheduled {
+    width: 136px;
+    height: 134px;
+    background-color: #3D41D7;
+    border-radius: 20px;
+
+    position: absolute;
+
+    top: 337px;
+    margin-left: 902px;
+}
+
+.scheduled__icon {
+    margin-left: 55px;
+    margin-top: 35px;
+}
+
+.scheduled__title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.scheduled__desc {
+    font-family: "DM Sans", sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: color .2s;
+}
+
+.weather {
+    position: absolute;
+    width: 314px;
+    height: 331px;
+    background-image: url(./img/weather.png);
+    top: 140px;
+    margin-left: 1086px;
+}
+
+.weather__title {
+    font-family: Averta;
+    font-weight: 600;
+    font-size: 26px;
+    color: #FFFFFF;
+    margin: 36px 66px 231px 99px;
+    margin-left: 36px;
+}
+
+.weather__desc {
+    font-family: Averta;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: inherit;
+    top: 0px;
+    margin-top: 106px;
+    margin-left: 36px;
+}
+
+.weather__current {
+    font-family: Averta;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 48px;
+    position: absolute;
+    top: 0px;
+    margin-left: 37px;
+    margin-top: 135px;
+}
+
+
+.weather__add__city {
+    width: 92px;
+    height: 90px;
+
+    margin-top: 224px;
+    margin-left: 199px;
+
+    position: absolute;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 34px rgba(34, 37, 169, 0.4);
+    border-radius: 20px 0px 20px 20px;
+}
+
+.weather__button {
+    position: absolute;
+    margin-left: -13px;
+    
+}
+
+.under__section__title {
+    font-family: Averta;
+    font-weight: bold;
+    top: 0;
+    font-size: 24px;
+
+    position: absolute;
+    margin-top: 584px;
+    margin-left: 383px;
+}
+
+.under__section__brand--btn {
+    background: #F6FAFF;
+    border: 1px solid #B3B6DA;
+    box-sizing: border-box;
+    border-radius: 40px;
+    position: absolute;
+    width: 126px;
+    height: 36px;
+
+    top: 0;
+
+    margin-top: 643px;
+    margin-left: 383px;
+}
+
+.under__section__brand--btn--text {
+    margin-top: 11px;
+    margin-left: 28px;
+    font-family: Averta;
+    font-weight: 600;
+    font-size: 10px;
+    color: #8F92A1;
+}
+
+.under__section__tasks__upcoming {
+    font-family: Averta;
+    font-weight: 600;
+    font-size: 10px;
+    color: #8F92A1;
+
+    position: absolute;
+    top: 0;
+    margin-left: 625px;
+    margin-top: 654px;
+}
+
+.under__section__twitter {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 10px;
+    background-color: #299EE8;
+
+    position: absolute;
+    top: 0;
+    margin-top: 713px;
+    margin-left: 383px;
+}
+
+.under__section__twitter--icon {
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.under__section__twitter__title {
+    position: absolute;
+    top: 0;
+
+    font-family: Averta;
+    font-size: 16px;
+    font-weight: 600;
+    color: #272835;
+
+    margin-left: 441px;
+    margin-top: 716px;
+}
+
+.under__section__twitter__desc {
+    position: absolute;
+    color: #8F92A1;
+    top: 0px;
+
+    font-family: Averta;
+    font-size: 10px;
+    font-weight: 600;
+
+
+    margin-left: 441px;
+    margin-top: 737px;
+}
+
+.under__section__twitter__index {
+    position: absolute;
+    top: 0px;
+
+    font-family: Averta;
+    font-weight: 600;
+    font-size: 15px;
+    color: #016F42;
+
+    margin-left: 639px;
+    margin-top: 722px;
+}
+
+.under__section__pinterest {
+    width: 48px;
+    height: 48px;
+
+    background-color: #D32F2F;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 0;
+    margin-top: 781px;
+    margin-left: 383px;
+}
+
+.under__section__pinterest--icon {
+    margin-left: 12px;
+    margin-top: 8px;
+}
+
+.under__section__pinterest__title {
+    position: absolute;
+    top: 0;
+
+    font-family: Averta;
+    font-size: 16px;
+    font-weight: 600;
+    color: #272835;
+
+    margin-left: 441px;
+    margin-top: 784px;
+}
+
+.under__section__pinterest__desc {
+    position: absolute;
+    color: #8F92A1;
+    top: 0px;
+
+    font-family: Averta;
+    font-size: 10px;
+    font-weight: 600;
+
+
+    margin-left: 441px;
+    margin-top: 805px;
+}
+
+.under__section__pinterest__index {
+    position: absolute;
+    top: 0px;
+
+    font-family: Averta;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FF0000;
+
+    margin-left: 639px;
+    margin-top: 790px;
+}
+
+.under__section__linkedin {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 10px;
+    background-color: #1976D2;
+
+    position: absolute;
+    top: 0;
+    margin-top: 849px;
+    margin-left: 383px;
+}
+
+.under__section__pinterest--icon {
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+.under__section__linkedin__title {
+    position: absolute;
+    top: 0;
+
+    font-family: Averta;
+    font-size: 16px;
+    font-weight: 600;
+    color: #272835;
+
+    margin-left: 441px;
+    margin-top: 852px;
+}
+
+.under__section__linkedin__desc {
+    position: absolute;
+    color: #8F92A1;
+    top: 0px;
+
+    font-family: Averta;
+    font-size: 10px;
+    font-weight: 600;
+
+
+    margin-left: 441px;
+    margin-top: 873px;
+}
+
+.under__section__linkedin__index {
+    position: absolute;
+    top: 0px;
+
+    font-family: Averta;
+    font-weight: 600;
+    font-size: 15px;
+    color: #6B46FF;
+
+    margin-left: 639px;
+    margin-top: 858px;
+}
+
+.under__section__circle {
+    width: 226px;
+    height: 226px;
+    
+
+
+    box-shadow: 0px 0px 44px rgba(34, 37, 169, 0.1);
+    border-radius: 200px;
+
+    position: absolute;
+    top: 0;
+
+    margin-top: 647px;
+    margin-left: 786px;
+
+}
+
+.under__section__circle--title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 55px;
+    text-align: center;
+
+    margin-top: 76px;
+    color: #3D41D7;
+}
+
+.under__section__circle--desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #8F92A1;
+    margin-top: 10px;
+
+
+
+    text-align: center;
+}
+
+.under__section__circle--orange {
+    top: 0;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -15px;
+}
+
+.post__reach__this__year {
+    width: 314px;
+    height: 280px;
+    background-color: #FA93D2;
+    background: linear-gradient(131.58deg, #FA93D2 1.34%, #895FE0 103.94%);
+    border-radius: 20px;
+
+    position: absolute;
+    top:0px;
+
+    margin-top: 617px;
+    margin-left: 1078px;
+}
+
+.post__reach__this__year__title {
+    position: absolute;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 76px;
+    margin-left: 71px;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.post__reach__this__year__chapter {
+    position: absolute;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    font-size: 57px;
+    color: #ffffff;
+
+    margin-top: 101px;
+    margin-left: 84px;
+}
+
+.post__reach__this__year__desc {
+    position: absolute;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: 175px;
+    margin-left: 72px;
+}
+
+.post__reach__this__year__year {
+    margin-top: 242px;
+    margin-left: 259px;
+    color: #ffffff;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+}
+
+.reach--bg {
+    position: absolute;
+    top: 0;
+    margin-top: 125px;
+    margin-left: 65px;
+}
